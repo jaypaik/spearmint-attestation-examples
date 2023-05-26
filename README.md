@@ -1,13 +1,17 @@
-# Sample Hardhat Project
+# Spearmint attestation examples
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This repo includes [some contract examples](/contracts/) that demonstrate how to consume
+Spearmint attestations.
 
-Try running some of the following tasks:
+Both types of attestations (signature and Merkle proof) are covered, each with two variations: one with attestation data and one without.
 
-```shell
-npx hardhat help
+A demonstration of how to integrate your frontend can be found in the [tests](/test/).
+
+You'll find some [helper contracts](/contracts/attestable/) here that can serve as a reference for your contracts. THESE CONTRACTS ARE NOT AUDITED SO USE AT YOUR OWN RISK.
+
+To run the tests:
+
+```sh
+yarn
 npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
 ```
